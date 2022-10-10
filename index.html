@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Игра угадай число</title>
+
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+      
+      .form input[type="number"] {
+        width: 200px;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Игра угадай число</h1>
+
+    <p>Я выбрал случайное число от 1 до 100. Ты выйграешь если за 10 ходов сможешь его угадать. Я скажу тебе если твое число будет больше или меньше.</p>
+
+    <div class="form">
+      <label for="guessField">Введи свое предположение: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Ввод" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script>
+
+      // Your JavaScript goes here
+
+    </script>
+  </body>
+</html>
